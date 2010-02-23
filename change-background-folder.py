@@ -36,13 +36,9 @@ Wallpapers= os.path.join(os.path.expanduser( "~"), Folder)
 # We get the different files in the folder, and choose one randomly
 files = os.listdir(Wallpapers)
 # We remove the script and the soft link from the candidates to be selected
-files.remove('change-background-folder.py')
-# We remove also the README, COPYING, copyright, gpl.txt, 
-files.remove('change-background-art-gnome.py')
-files.remove('README')
-files.remove('COPYING')
-files.remove('copyright')
-files.remove('gpl.txt')
+for i in 'change-background-folder.py','change-background-art-gnome.py','README','COPYING','copyright','gpl.txt','INSTALL':
+    if i in files:
+        files.remove(i)
 
 if os.path.isfile(os.path.join(Wallpapers,'Wallpaper')):
     files.remove('Wallpaper')
