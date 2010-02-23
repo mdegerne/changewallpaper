@@ -1,5 +1,5 @@
 [Options]
 # Here we set the resolution of our screen:
-resolution=1024x768
+resolution=1280x800
 # We can select the type of art.gnome.org wallpapers that we wont: GNOME, NATURE or OTHER. If we want all: ALL
 type=NATURE
